@@ -10,13 +10,14 @@
 .cx-header {
   background-color: rgb(138, 23, 23);
   .img-logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
     width: 90px;
+    filter: drop-shadow(1px 2px 50px white);
   }
-  .NavLink {
-    
-    font-size: 20px;
-    font-weight: 600;
-    margin-right: 5px;
+  .nav-link {
+    margin-left: 30px;
     &:hover {
       color: orange;
     }
