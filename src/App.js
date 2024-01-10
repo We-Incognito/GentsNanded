@@ -6,20 +6,21 @@ import Home from "./Pages/Home.jsx";
 import Mens from "./Pages/Mens.jsx";
 import About from "./Components/About.jsx";
 import Kids from "./Pages/Kids.jsx";
-
+import SignIn from "./Pages/SignIn.jsx";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
 
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/mens" element={<Mens/>} />
-          <Route path="/kids" element={<Kids/>} />
-          <Route path="/about" element={<About/>} />
-        </Routes>
-        <Footer />
+      <Routes>
+        <Route path="/" element={<SignIn />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/mens" element={<Mens />} />
+        <Route path="/kids" element={<Kids />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer />
     </div>
   );
 };

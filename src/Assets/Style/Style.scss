@@ -8,6 +8,8 @@
 }
 
 .cx-header {
+  position: sticky;
+  z-index: 1;
   background-color: rgb(138, 23, 23);
   .img-logo {
     position: absolute;
@@ -15,19 +17,82 @@
     left: 20px;
     width: 90px;
     filter: drop-shadow(1px 2px 50px white);
+    border-radius: 40px;
   }
   .nav-link {
     margin-left: 30px;
+  }
+  .link-wrapper {
     &:hover {
       color: orange;
+      border-bottom: 1px solid orange;
     }
   }
-  .right-header {
-    .icon-btn {
-      background-color: transparent;
-      border: none;
-      padding: 10px;
-      font-weight: 400;
+}
+.right-header {
+  .icon-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-weight: 400;
+    &:hover {
+      color: orange;
+      border-bottom: 2px solid white;
     }
+  }
+}
+// SignIn sass
+
+.signin-wrapper {
+  background: url("../Images/Background-image.png") no-repeat;
+  background-size: cover;
+}
+
+.signin {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 40%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 1px 0 10px white;
+  margin-bottom: 10px;
+
+  .name-wrapper {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+  .emial-wrapper {
+    color: white;
+    input {
+      width: 80%;
+    }
+  }
+  .passwrod-wrapper{
+
+  }
+
+  input {
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  input[type="submit"] {
+    width: 50%;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgb(246, 70, 70);
+    color: white;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: rgb(215, 6, 6);
+    border-radius: 4px;
+    border: 1px solid #ccc;
   }
 }

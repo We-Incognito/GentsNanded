@@ -19,6 +19,7 @@ const Header = () => {
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="nav-link">
               <NavLink
+                className="link-wrapper"
                 style={{
                   textDecoration: "none",
                   color: "white",
@@ -30,6 +31,7 @@ const Header = () => {
                 Home
               </NavLink>
               <NavLink
+                className="link-wrapper"
                 style={{
                   textDecoration: "none",
                   color: "white",
@@ -41,6 +43,7 @@ const Header = () => {
                 Mens
               </NavLink>
               <NavLink
+                className="link-wrapper"
                 style={{
                   textDecoration: "none",
                   color: "white",
@@ -52,6 +55,7 @@ const Header = () => {
                 Kids
               </NavLink>
               <NavLink
+                className="link-wrapper"
                 style={{
                   textDecoration: "none",
                   color: "white",
@@ -65,9 +69,6 @@ const Header = () => {
             </Nav>
           </Navbar.Collapse>
           <div className="right-header">
-            <div className="search-wrpper">
-              <input type="text" />
-            </div>
             <button
               style={{
                 color: "white",
