@@ -41,6 +41,7 @@ function App() {
               onChange={(e) => setFirstName(e.target.value)}
               required
             />
+            <br />
             <label htmlFor="lastName">Last Name:</label>
             <input
               type="text"

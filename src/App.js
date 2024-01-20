@@ -11,8 +11,8 @@ import SignIn from "./Pages/SignIn.jsx";
 const App = () => {
   return (
     <div className="App">
+      {/* {cuurRoute === "/" || cuurRoute === "/signup" ? <></> : <Header />} */}
       <Header />
-
       <Routes>
         <Route path="/" element={<SignIn />} />
         <Route path="/home" element={<Home />} />
@@ -21,6 +21,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
+      {/* {cuurRoute === "/" || cuurRoute === "/signup" ? <></> : <Footer />} */}
     </div>
   );
 };

@@ -9,7 +9,7 @@
 
 .cx-header {
   position: sticky;
-  z-index: 1;
+  top: 0;
   background-color: rgb(138, 23, 23);
   .img-logo {
     position: absolute;
@@ -24,8 +24,9 @@
   }
   .link-wrapper {
     &:hover {
-      color: orange;
-      border-bottom: 1px solid orange;
+      color: orange !important;
+      // border-bottom: 1px solid orange;
+      text-decoration: underline !important;
     }
   }
 }
@@ -37,48 +38,38 @@
     font-weight: 400;
     &:hover {
       color: orange;
-      border-bottom: 2px solid white;
     }
   }
 }
 // SignIn sass
 
-.signin-wrapper {
+body .signin-wrapper {
   background: url("../Images/Background-image.png") no-repeat;
   background-size: cover;
+  
+  height: 100vh;
+  margin: auto;
 }
 
 .signin {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 30%;
   margin: auto;
-  margin-top: 50px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 1px 0 10px white;
   margin-bottom: 10px;
-
-  .name-wrapper {
-    display: flex;
-    justify-content: space-around;
+  label {
     color: white;
-  }
-  .emial-wrapper {
-    color: white;
-    input {
-      width: 80%;
-    }
-  }
-  .passwrod-wrapper{
-
   }
 
   input {
     margin-bottom: 25px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    text-align: center;
   }
 
   input[type="submit"] {
@@ -94,5 +85,52 @@
     background-color: rgb(215, 6, 6);
     border-radius: 4px;
     border: 1px solid #ccc;
+  }
+}
+
+// Footer Css...
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(138, 23, 23);
+  color: white;
+
+  h3 {
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .footer-feedback {
+    border: 3px solid white;
+    padding: 10px;
+    input {
+      margin-left: 10px;
+    }
+    label {
+      text-decoration: underline;
+    }
+    ::placeholder {
+      color: red;
+      text-decoration: underline;
+      padding: 10px;
+    }
   }
 }
